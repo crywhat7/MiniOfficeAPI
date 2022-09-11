@@ -14,7 +14,7 @@
   "author": "CryWhat",
   "license": "ISC",
   "engines": {
-    "node": ">= 18.8.0"
+    "node": "18.8.0"
   },
   "bugs": {
     "url": "https://github.com/crywhat7/MiniOfficeAPI/issues"
