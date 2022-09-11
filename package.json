@@ -1,34 +1,42 @@
 {
-  "name": "mini_rest_api",
+  "name": "restapiminioffice",
   "version": "1.0.0",
-  "description": "REST API para el proyecto del mini office.",
+  "description": "REST API para el Mini Office",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/crywhat7/MiniOfficeRestAPI.git"
+    "url": "git+https://github.com/crywhat7/MiniOfficeAPI.git"
   },
   "author": "CryWhat",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/crywhat7/MiniOfficeRestAPI/issues"
+    "url": "https://github.com/crywhat7/MiniOfficeAPI/issues"
   },
-  "homepage": "https://github.com/crywhat7/MiniOfficeRestAPI#readme",
+  "homepage": "https://github.com/crywhat7/MiniOfficeAPI#readme",
   "dependencies": {
+    "@el3um4s/mdbtools": "^1.0.3",
+    "adodb": "^0.0.16",
+    "bluebird": "^3.7.2",
     "cors": "^2.8.5",
-    "debug": "^4.3.4",
     "express": "^4.18.1",
-    "express-winston": "^4.2.0",
-    "winston": "^3.8.2"
+    "express-validator": "^6.14.2",
+    "node-adodb": "^5.0.3",
+    "nodemon": "^2.0.19",
+    "odbc": "^2.4.4",
+    "pg-promise": "^10.12.0"
   },
-  "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/debug": "^4.1.7",
-    "@types/express": "^4.17.13",
-    "source-map-support": "^0.5.21",
-    "tslint": "^6.1.3",
-    "typescript": "^4.8.3"
-  }
+  "extraResources": [
+    {
+      "from": "./node_modules/node-adodb/lib/adodb.js",
+      "to": "adodb.js"
+    },
+    {
+      "from": "./node_modules/node-adodb/lib/spawn.js",
+      "to": "spawn.js"
+    }
+  ]
 }
