@@ -28,15 +28,5 @@
     "express-validator": "^6.14.2",
     "nodemon": "^2.0.19",
     "pg-promise": "^10.12.0"
-  },
-  "extraResources": [
-    {
-      "from": "./node_modules/node-adodb/lib/adodb.js",
-      "to": "adodb.js"
-    },
-    {
-      "from": "./node_modules/node-adodb/lib/spawn.js",
-      "to": "spawn.js"
-    }
-  ]
+  }
 }
